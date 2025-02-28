@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Booking System</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="container" id="loginForm">
+        <h2>Login</h2>
+        <div class="form-group">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail">
+        </div>
+        <div class="form-group">
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword">
+        </div>
+        <button onclick="login()">Login</button>
+        <button onclick="showRegister()">Register</button>
+    </div>
+
+    <div class="container" id="registerForm" style="display: none;">
+        <h2>Register</h2>
+        <div class="form-group">
+            <label for="registerEmail">Email:</label>
+            <input type="email" id="registerEmail">
+        </div>
+        <div class="form-group">
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword">
+        </div>
+        <button onclick="register()">Register</button>
+        <button onclick="showLogin()">Back to Login</button>
+    </div>
+
+    <div class="container" id="bookingForm" style="display: none;">
+        <h2>Book Cylinder</h2>
+        <button onclick="bookCylinder()">Book Now</button>
+        <button onclick="logout()">Logout</button>
+        <button onclick="showHistory()">Booking History</button>
+        <button onclick="showNotifications()">Notifications</button>
+    </div>
+
+    <div class="container" id="bookingHistory" style="display: none;">
+        <h2>Booking History</h2>
+        <ul id="historyList"></ul>
+        <button onclick="hideHistory()">Close</button>
+    </div>
+
+    <div class="container" id="notifications" style="display: none;">
+        <h2>Notifications</h2>
+        <ul id="notificationList"></ul>
+        <button onclick="hideNotifications()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
