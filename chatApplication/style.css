@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1c1919;
+    background-image: url(social-network-scheme-HMYK20.jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+#chat-container {
+    color:  navy;
+    width: 300px;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(32, 30, 30, 0.1);
+}
+#messages {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #040404;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+input, button {
+    color: navy;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
