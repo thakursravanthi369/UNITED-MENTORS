@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#post1">Blog Post 1</a></li>
+                <li><a href="#post2">Blog Post 2</a></li>
+                <li><a href="#post3">Blog Post 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="post" id="post1">
+            <h2>Blog Post 1</h2>
+            <p><strong>Published on:</strong> March 4, 2025</p>
+            <img src="ncr104-2.jpg" alt="Blog Image 1">
+            <p>This is the content of the first blog post.</p>
+            <div class="comments">
+                <h3>Comments</h3>
+                <input type="text" id="name1" placeholder="Your Name">
+                <textarea id="comment1" placeholder="Your Comment"></textarea>
+                <button onclick="addComment('commentList1', 'name1', 'comment1')">Submit</button>
+                <ul id="commentList1"></ul>
+            </div>
+        </article>
+
+        <article class="post" id="post2">
+            <h2>Blog Post 2</h2>
+            <p><strong>Published on:</strong> March 3, 2025</p>
+            <img src="pngwing.com.png" alt="Blog Image 2">
+            <p>This is the content of the second blog post.</p>
+            <div class="comments">
+                <h3>Comments</h3>
+                <input type="text" id="name2" placeholder="Your Name">
+                <textarea id="comment2" placeholder="Your Comment"></textarea>
+                <button onclick="addComment('commentList2', 'name2', 'comment2')">Submit</button>
+                <ul id="commentList2"></ul>
+            </div>
+        </article>
+
+        <article class="post" id="post3">
+            <h2>Blog Post 3</h2>
+            <p><strong>Published on:</strong> March 2, 2025</p>
+            <img src="—Pngtree—beautiful red tube top dress_4508160.png" alt="Blog Image 3">
+            <p>This is the content of the third blog post.</p>
+            <div class="comments">
+                <h3>Comments</h3>
+                <input type="text" id="name3" placeholder="Your Name">
+                <textarea id="comment3" placeholder="Your Comment"></textarea>
+                <button onclick="addComment('commentList3', 'name3', 'comment3')">Submit</button>
+                <ul id="commentList3"></ul>
+            </div>
+        </article>
+    </main>
+    
+    <script src="script.js"></script>
+   
+</body>
+</html>
