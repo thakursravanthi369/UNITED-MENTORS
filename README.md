@@ -1,4 +1,4 @@
-# UNITED-MENTORS
+# UNIFIED-MENTORS
 Project Report: Online Gas Booking System
 
 1. Introduction
